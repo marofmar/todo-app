@@ -37,6 +37,16 @@ export default function Home() {
     fetchUserAndTodos();
   }, [router]);
 
+  // 로그아웃
+  const handleLogout = async () => {
+    const { error } = await supabase.auth.signOut();
+    if (error) {
+      console.error("로그아웃 실패", error);
+    } else {
+      router.push("/auth/login");
+    }
+  };
+
   // Todo 목록 추가
   const addTodo = async () => {
     if (!newTodo.trim()) return;

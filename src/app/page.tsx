@@ -111,6 +111,22 @@ export default function Home() {
 
   return (
     <div style={{ padding: "2rem" }}>
+      {/* 로그아웃 버튼 */}
+      <div style={{ display: "flex", justifyContent: "flex-end" }}>
+        <button
+          onClick={handleLogout}
+          style={{
+            padding: "0.5rem 1rem",
+            backgroundColor: "#ccc",
+            border: "none",
+            borderRadius: "6px",
+            cursor: "pointer",
+          }}
+        >
+          로그아웃
+        </button>
+      </div>
+
       <h1>나의 To-do 리스트</h1>
 
       {/* Todo 추가 폼 */}

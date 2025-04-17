@@ -60,8 +60,8 @@ export default function LoginPage() {
         onClick={handleLogin}
         style={{
           padding: "0.5rem 1rem",
-          backgroundColor: "#0070f3",
-          color: "white",
+          backgroundColor: "pink",
+          color: "black",
           border: "none",
           borderRadius: "4px",
         }}

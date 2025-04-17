@@ -140,13 +140,7 @@ export default function Home() {
         />
         <button
           onClick={addTodo}
-          style={{
-            padding: "0.5rem 1rem",
-            backgroundColor: "#0070f3",
-            color: "white",
-            border: "none",
-            borderRadius: "4px",
-          }}
+          className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
         >
           추가
         </button>

@@ -15,10 +15,6 @@ const nextConfig = {
     }
     return config;
   },
-  serverExternalPackages: ["@nodelib/fs.scandir"],
-  experimental: {
-    serverActions: true,
-  },
 };
 
 module.exports = nextConfig;

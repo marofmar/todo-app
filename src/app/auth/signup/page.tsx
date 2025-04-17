@@ -3,6 +3,13 @@
 import { useState } from "react";
 import { supabase } from "@/lib/supabaseClient";
 import { useRouter } from "next/navigation";
+import styled from "@emotion/styled";
+
+const Wrapper = styled.div`
+  padding: 2rem;
+  max-width: 400px;
+  margin: 0 auto;
+`;
 export default function SignUpPage() {
   const router = useRouter();
   const [email, setEmail] = useState("");
@@ -22,7 +29,7 @@ export default function SignUpPage() {
   };
 
   return (
-    <div style={{ padding: "2rem" }}>
+    <Wrapper>
       <h1>회원가입</h1>
       <input
         type="email"
@@ -61,6 +68,20 @@ export default function SignUpPage() {
         회원가입
       </button>
       {error && <p style={{ color: "red", marginTop: "1rem" }}>{error}</p>}
-    </div>
+
+      <button
+        style={{
+          padding: "0.5rem 1rem",
+          backgroundColor: "pink",
+          color: "black",
+          border: "none",
+          borderRadius: "4px",
+          marginLeft: "1rem",
+        }}
+        onClick={() => router.push("/auth/login")}
+      >
+        로그인 하러가기
+      </button>
+    </Wrapper>
   );
 }

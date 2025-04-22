@@ -1,7 +1,7 @@
 {
   "name": "a3td 투두앱",
   "short_name": "a3td",
-  "start_url": "/todo",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#F2F1EB",
   "theme_color": "#375B6D",

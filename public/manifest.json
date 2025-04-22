@@ -1,0 +1,20 @@
+{
+  "name": "a3td 투두앱",
+  "short_name": "a3td",
+  "start_url": "/todo",
+  "display": "standalone",
+  "background_color": "#F2F1EB",
+  "theme_color": "#375B6D",
+  "icons": [
+    {
+      "src": "/icons/a3td_192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/a3td_512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
